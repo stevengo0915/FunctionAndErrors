@@ -4,7 +4,10 @@ Functions and Errors
 
 ## Description
 
-This Solidity program is a program that demonstrates a smart contract that implements the require(), assert() and revert() statements.
+This Solidity program is a program that demonstrates a smart contract that implements the require(), assert() and revert() statements. 
+The Attachment below is the link to view the video demonstration of the program. 
+
+https://www.loom.com/share/8e459528710c4aa68d55fd2f5c3a7a95?sid=f9032531-5054-42e3-add6-07ea5dce1577
 
 ### Executing program
 
