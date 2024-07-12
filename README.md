@@ -1,24 +1,47 @@
-# Project Title
+# FunctionAndErrorsMTCT Contract
 
-Functions and Errors
+This Solidity smart contract demonstrates various error handling and assertion techniques using require, assert, and revert functions.
 
-## Description
+## Contract Details
 
-This Solidity program is a program that demonstrates a smart contract that implements the require(), assert() and revert() statements. 
-The Attachment below is the link to view the video demonstration of the program. 
+- **Owner**: Stores the address of the contract owner.
+- **RequireTestAccount**: Stores an unsigned integer value that can be updated by the owner.
+  
+### Functions
 
-https://www.loom.com/share/8e459528710c4aa68d55fd2f5c3a7a95?sid=f9032531-5054-42e3-add6-07ea5dce1577
+1. **Constructor**
 
-### Executing program
+   Initializes the contract by setting the owner to the address that deployed the contract.
 
-* How to run the program
-- Copy the raw file entitled "ProjectMTCT.sol"
-- Paste the code to your code editor that supports .sol source file
-- Deploy the smart contract
-- Test the code by setting the setValue to 1
-- check the value by clicking the value
-- try inputting the performDivision function to see if its working
-- try to explore more values to input so that you can try out the whole code
+2. **RequireTest Function**
+
+   - **Purpose**: Demonstrates the usage of `require` for access control.
+   - **Parameters**: `newValue` - Unsigned integer value to update `RequireTestAccount`.
+   - **Conditions**: Only allows the owner to update `RequireTestAccount`. If the caller is not the owner, the transaction reverts with an error message.
+
+3. **AssertTest Function**
+
+   - **Purpose**: Demonstrates the usage of `assert` for internal checks.
+   - **Parameters**: `x` - Unsigned integer value.
+   - **Conditions**: Asserts that `x` is not zero before performing a division operation. If `x` is zero, the assertion fails and reverts the transaction.
+
+4. **RevertTest Function**
+
+   - **Purpose**: Demonstrates the usage of `revert` to revert transactions.
+   - **Parameters**: `x` - Unsigned integer value.
+   - **Conditions**: If `x` is zero, the function reverts the transaction with a custom error message "Cannot be divided by zero". Otherwise, it performs a division operation and returns the result.
+
+## Usage
+
+To deploy and interact with this contract:
+- Deploy the contract using a compatible Ethereum development environment or a blockchain network.
+- Use a tool like Remix IDE, Truffle, or Hardhat for development and testing.
+- Interact with the contract functions according to the conditions specified in each function's description.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
   
 ## Authors
 
