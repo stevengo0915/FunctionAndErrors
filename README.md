@@ -1,6 +1,6 @@
 # FunctionAndErrorsMTCT Contract
 
-This Solidity smart contract demonstrates various error handling and assertion techniques using require, assert, and revert functions.
+This Solidity smart contract demonstrates various error handling and assertion techniques using require, assert, and revert statements.
 
 ## Contract Details
 
@@ -34,21 +34,15 @@ This Solidity smart contract demonstrates various error handling and assertion t
 ## Usage
 
 To deploy and interact with this contract:
-- Deploy the contract using a compatible Ethereum development environment or a blockchain network.
+- Deploy the contract using a compatible Ethereum development environment.
 - Use a tool like Remix IDE, Truffle, or Hardhat for development and testing.
 - Interact with the contract functions according to the conditions specified in each function's description.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
-  
 ## Authors
 
 Contributors names and contact info
 
 -Steven T. Go ("https://github.com/stevengo0915")
-
 
 ## License
 
